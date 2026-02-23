@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A movie website that provides information about movies, including details such as release dates, ratings, and reviews. The website may also include features such as trailers, cast and crew information, and user-generated content such as reviews and ratings. The website may be designed to be user-friendly and visually appealing, with a focus on providing an enjoyable browsing experience for movie enthusiasts.">
+    <meta name="keywords" content="movies, movie information, release dates, ratings, reviews, trailers, cast and crew information, user-generated content, movie enthusiasts">
+    <meta name="author" content="Abdelhamid Sarhan">
+    <title>Movies</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <!-- Aside -->
+    <div class="aside" id="slide">
+      <div class="header position-fixed">
+        <div class="aside-links vh-100 position-fixed top-0">
+            <div class="items">
+                <nav class="px-4 py-3">
+                <a class="d-block  text-decoration-none fw-normal active" href="#home" category="now_playing">Now Playing</a>
+                <a class="d-block  text-decoration-none fw-normal " href="#home" category="popular">Popular</a>
+                <a class="d-block  text-decoration-none fw-normal " href="#home" category="top_rated">Top Rated</a>
+                <a class="d-block  text-decoration-none fw-normal " href="#home" category="trending">Trending</a>
+                <a class="d-block  text-decoration-none fw-normal " href="#home" category="upcoming">Upcoming</a>
+                <a class="d-block  text-decoration-none fw-normal " href="#contact" id="contactUs">Contact US</a>
+                </nav>
+            </div>
+        </div>
+        <div class="second-aside vh-100 position-fixed d-flex align-items-center justify-content-between flex-column">
+            <div class="logo mx-auto">
+                <img src="image/logo.png" class="w-100"  alt="logo" />
+            </div>
+
+            <div class="open-close text-dark" id="Btn">
+                <span class="open d-block"><i class="fa-solid fa-bars"></i></span>
+                <span class="close d-none"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="social">
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-globe"></i></li>
+                    <li><i class="fas fa-share-alt"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Aside -->
+    <!-- Start Home -->
+     <div class="login">
+         <div class="mode">
+            <i class="fa-solid fa-sun d-none"></i>
+            <i class="fa-solid fa-moon"></i>
+         </div>
+        <a href="AddToWatchlist.html" class="btn btn-warning ms-3 Watchlist d-none"><i class="fa-solid fa-bookmark"></i> Watchlist</a>
+        <a href="login.html" class="btn btn-warning ms-3 login-signup">Sign In</a>
+        <a href="" class="btn btn-warning ms-3 log-out d-none">Log Out</a>
+     </div>
+    <div class="home py-5" id="home">
+        <div class="container px-5 mt-3">
+            <h1 class="text-center">Welcome To Movies Website</h1>
+            <div class="my-5">
+                <div class="search d-flex justify-content-around">
+                    <input type="text" class="form-control rounded-0 bg-transparent border-bottom border-2 border-secondary border-0" placeholder="get movies by word.." id="getMovieWord"/>
+                    <input type="text" class="form-control rounded-0 bg-transparent border-bottom border-2 border-secondary border-0" placeholder="search...." id="searchMovie"/>
+                </div>
+                <div class="movies-content py-5">
+                    <div class="row" id="moviesContent">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- End Home -->
+    <!-- Contact Us -->
+    <div class="contact-us py-4" id="contact">
+        <div class="container w-75 m-auto">
+            <div class="contact-head">
+                <h2 class="mb-3">Contact Us....</h2>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nameInput" placeholder="">
+                <label for="nameInput">Full Name</label>
+                <div id="validationName"></div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="emailInput" placeholder="">
+                <label for="emailInput">Email address</label>
+                <div id="validationEmail"></div>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" id="messageInput" style="height: 100px"></textarea>
+                <label for="messageInput">Comments</label>
+                <div id="validationMessage"></div>
+            </div>
+            <button class=" btn btn-outline-warning position-static submit-contact">Send Message</button>
+        </div>
+    </div>
+    <!-- End Contact US -->
+    <footer class="d-flex justify-content-center align-items-center bg-dark py-3">
+        <p class="text-white m-0">Copyright ©2026 All Rights Reserved.</p>
+    </footer>
+    <!--top-->
+    <div class="top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+    <script src="Js/script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A movie website that provides information about movies, including details such as release dates, ratings, and reviews. The website may also include features such as trailers, cast and crew information, and user-generated content such as reviews and ratings. The website may be designed to be user-friendly and visually appealing, with a focus on providing an enjoyable browsing experience for movie enthusiasts.">
+    <meta name="keywords" content="movies, movie information, release dates, ratings, reviews, trailers, cast and crew information, user-generated content, movie enthusiasts">
+    <meta name="author" content="Abdelhamid Sarhan">
+    <title>Movies</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <div class="login">
+      <div class="mode">
+        <i class="fa-solid fa-sun d-none"></i>
+        <i class="fa-solid fa-moon"></i>
+      </div>
+      <a href="AddToWatchlist.html" class="btn btn-warning ms-3 Watchlist"><i class="fa-solid fa-bookmark"></i> Watchlist</a>
+    </div>
+
+  <div class="container my-5 pt-5">
+    
+    <div id="movieDetails"></div>
+
+    <h3 class="cast-moive">Cast</h3>
+    <div id="castContainer">
+      <div class="cast-moive-info d-flex flex-wrap justify-content-center align-items-center">  </div>
+      <div class="d-flex align-items-center justify-content-center">
+        <button class="btn btn-warning mt-3 m-auto" id="showMoreCast">Show More</button>
+      </div>
+    </div>
+
+    
+    <div id="trailerContainer" class="d-none">
+      <div class="trailer-overlay">
+      </div>
+    </div>
+
+    
+    <h3>Recommendations</h3>
+    <div class="row" id="recommendationsContainer"></div>
+  </div>
+
+    <footer class="d-flex justify-content-center align-items-center bg-dark py-3">
+        <p class="text-white m-0">Copyright ©2026 All Rights Reserved.</p>
+    </footer>
+
+    <!--top-->
+    <div class="top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+    <script src="Js/movie.js"></script>
+  </body>
+</html>
+

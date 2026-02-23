@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn & SignUp</title>
+    <link rel="stylesheet" href="CSS/all.min.css"/>
+    <link rel="stylesheet" href="CSS/logIn.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Login</span>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" placeholder="Enter your email" name="Email" required />
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" name="Password" placeholder="Enter your password" required />
+              <i class="fa-solid fa-lock icon"></i>
+              <i class="fa-regular fa-eye-slash showHidePw"></i>
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck" name="RememberMe" value="Remember me" />
+                <label for="logCheck" class="text">Remember me</label>
+              </div>
+              <a href="#" class="text">Forgot password?</a>
+            </div>
+            <div class="input-field button">
+              <input type="submit" value="Login"/>
+            </div>
+              <div class="message">
+              </div>
+          </form>
+          <div class="login-signup">
+            <span class="text">Don't have an account?
+              <a href="#" class="text signup-link">Signup Now</a>
+            </span>
+          </div>
+        </div>
+        <!-- Registration Form -->
+        <div class="form signup">
+          <span class="title">Registration</span>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" placeholder="Enter your First Name" name="FirstName" required />
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div id="validationFirstName" class="valid-mess"></div>
+            <div class="input-field">
+              <input type="text" placeholder="Enter your Last Name" name="LastName" required />
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div id="validationLastName" class="valid-mess"></div>
+            <div class="input-field">
+              <input type="text" placeholder="Enter your email" name="Email" required />
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div id="validationEmail" class="valid-mess"></div>
+            <div class="input-field">
+              <input type="password" class="password" name="Password" placeholder="Create a password" required />
+                <i class="fa-solid fa-lock icon"></i>
+                <i class="fa-regular fa-eye-slash showHidePw"></i>
+            </div>
+            <div id="validationPass" class="valid-mess"></div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="termCon" name="Terms" value="Accepted" required />
+                <label for="termCon" class="text">I accepted all terms and conditions</label>
+              </div>
+            </div>
+            <div class="input-field button">
+              <input type="submit" value="Signup"/>
+            </div>
+            <div class="message">
+                
+            </div>
+          </form>
+          <div class="login-signup">
+            <span class="text">Already Have an account?
+              <a href="#" class="text login-link">Login Now</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Js/logIn.js"></script>
+  </body>
+</html>
