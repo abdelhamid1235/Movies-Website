@@ -56,7 +56,7 @@ loginFiled.addEventListener("submit", function(e){
     document.querySelector(".login .message").innerText = "Login successful!";
     sessionStorage.setItem("correctLogin","true");
     setTimeout(()=>{
-      window.location.href = "../index.html";
+      window.location.href = "index.html";
     },1000);
   } else {
     document.querySelector(".login .message").style.cssText = "color: red; text-align: center; padding: 10px;font-size:20px";
@@ -144,3 +144,4 @@ PasswordInput.addEventListener("blur",()=>
   validateInput(PasswordInput,/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,30}$/,"validationPass","Password must be at least 8 characters and include uppercase, lowercase, number and special character.")
 
 );
+
