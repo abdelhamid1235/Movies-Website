@@ -2,7 +2,8 @@ let openAside = document.querySelector(".open-close .open");
 let closeAside = document.querySelector(".open-close .close");
 let asideLinks = document.querySelector(".aside-links");
 let secondAside = document.querySelector(".second-aside");
-let AllLinks = document.querySelectorAll(".aside-links nav a");
+let AllLinks = document.querySelectorAll("nav a");
+let AllLinksInAside = document.querySelectorAll(".aside .aside-links nav a");
 let moviesContent = document.querySelector("#moviesContent");
 //open and close
 openAside.addEventListener("click", function () {
@@ -10,15 +11,29 @@ openAside.addEventListener("click", function () {
   openAside.classList.replace("d-block", "d-none");
   asideLinks.style.left = 0;
   secondAside.style.left = "155px";
-  AllLinks.forEach(link => link.style.padding = "12px 0px");
+  AllLinksInAside.forEach(link => link.style.padding = "12px 0px");
 });
 closeAside.addEventListener("click", function () {
   closeAside.classList.replace("d-block", "d-none");
   openAside.classList.replace("d-none", "d-block");
   asideLinks.style.left = "-155px";
   secondAside.style.left = 0;
-  AllLinks.forEach(link => link.style.padding = "50px 0px");
+  AllLinksInAside.forEach(link => link.style.padding = "50px 0px");
 });
+
+// bars 
+let bars = document.querySelector(".bars i");
+let navLinks = document.querySelector(".nav-links");
+
+bars.addEventListener("click", function () {
+  navLinks.classList.toggle("show");
+  if(navLinks.classList.contains("show")){
+    bars.classList.replace("fa-bars","fa-xmark")
+  }else{
+    bars.classList.replace("fa-xmark","fa-bars")
+  }
+});
+
 
 let allItems = [];
 
