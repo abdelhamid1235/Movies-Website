@@ -28,6 +28,7 @@ pwShowHide.forEach((eyeIcon) => {
 signUp.addEventListener("click", (e) => {
   e.preventDefault();
   container.classList.add("active");
+  document.querySelector(".login .message").innerText = "";
 });
 login.addEventListener("click", (e) => {
   e.preventDefault();
@@ -141,4 +142,5 @@ emailInput.addEventListener("blur",()=>
 );
 PasswordInput.addEventListener("blur",()=>
   validateInput(PasswordInput,/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,30}$/,"validationPass","Password must be at least 8 characters and include uppercase, lowercase, number and special character.")
+
 );
