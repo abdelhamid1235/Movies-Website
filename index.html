@@ -19,12 +19,12 @@
         <div class="aside-links vh-100 position-fixed top-0">
             <div class="items">
                 <nav class="px-4 py-3">
-                <a class="d-block  text-decoration-none fw-normal active" href="#home" category="now_playing">Now Playing</a>
-                <a class="d-block  text-decoration-none fw-normal " href="#home" category="popular">Popular</a>
-                <a class="d-block  text-decoration-none fw-normal " href="#home" category="top_rated">Top Rated</a>
-                <a class="d-block  text-decoration-none fw-normal " href="#home" category="trending">Trending</a>
-                <a class="d-block  text-decoration-none fw-normal " href="#home" category="upcoming">Upcoming</a>
-                <a class="d-block  text-decoration-none fw-normal " href="#contact" id="contactUs">Contact US</a>
+                    <a class="d-block  text-decoration-none fw-normal active" href="#home" category="now_playing">Now Playing</a>
+                    <a class="d-block  text-decoration-none fw-normal " href="#home" category="popular">Popular</a>
+                    <a class="d-block  text-decoration-none fw-normal " href="#home" category="top_rated">Top Rated</a>
+                    <a class="d-block  text-decoration-none fw-normal " href="#home" category="trending">Trending</a>
+                    <a class="d-block  text-decoration-none fw-normal " href="#home" category="upcoming">Upcoming</a>
+                    <a class="d-block  text-decoration-none fw-normal " href="#contact" id="contactUs">Contact US</a>
                 </nav>
             </div>
         </div>
@@ -56,16 +56,27 @@
             <i class="fa-solid fa-moon"></i>
          </div>
         <a href="AddToWatchlist.html" class="btn btn-warning ms-3 Watchlist d-none"><i class="fa-solid fa-bookmark"></i> Watchlist</a>
-        <a href="login.html" class="btn btn-warning ms-3 login-signup">Sign In</a>
-        <a href="" class="btn btn-warning ms-3 log-out d-none">Log Out</a>
+        <a href="login.html" class="btn btn-warning mx-3 login-signup">Sign In</a>
+        <a href="" class="btn btn-warning mx-3 log-out d-none">Log Out</a>
+        <div class="bars justify-content-center align-items-center">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-links">
+            <a class="d-block  text-decoration-none fw-normal active" href="#home" category="now_playing">Now Playing</a>
+            <a class="d-block  text-decoration-none fw-normal " href="#home" category="popular">Popular</a>
+            <a class="d-block  text-decoration-none fw-normal " href="#home" category="top_rated">Top Rated</a>
+            <a class="d-block  text-decoration-none fw-normal " href="#home" category="trending">Trending</a>
+            <a class="d-block  text-decoration-none fw-normal " href="#home" category="upcoming">Upcoming</a>
+            <a class="d-block  text-decoration-none fw-normal " href="#contact" id="contactUs">Contact US</a>
+        </nav>
      </div>
-    <div class="home py-5" id="home">
+    <div class="home py-3" id="home">
         <div class="container px-5 mt-3">
             <h1 class="text-center">Welcome To Movies Website</h1>
             <div class="my-5">
                 <div class="search d-flex justify-content-around">
-                    <input type="text" class="form-control rounded-0 bg-transparent border-bottom border-2 border-secondary border-0" placeholder="get movies by word.." id="getMovieWord"/>
-                    <input type="text" class="form-control rounded-0 bg-transparent border-bottom border-2 border-secondary border-0" placeholder="search...." id="searchMovie"/>
+                    <input type="text" class="form-control  bg-transparent" placeholder="get movies by word..." id="getMovieWord"/>
+                    <input type="text" class="form-control  bg-transparent " placeholder="search...." id="searchMovie"/>
                 </div>
                 <div class="movies-content py-5">
                     <div class="row" id="moviesContent">
@@ -113,4 +124,3 @@
     <script src="Js/script.js"></script>
   </body>
 </html>
-
