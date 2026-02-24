@@ -131,7 +131,7 @@ input.is-valid ~i{
 }
 .form .text {
     color: #333;
-    font-size: 15px;
+    font-size: 10px;
 }
 .form a.text {
     color: #4070f4;
@@ -163,4 +163,15 @@ input.is-valid ~i{
 }
 ::placeholder {
     color: #333;
+
+}
+@media (min-width: 341px) {
+  .form .text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 410px) {
+  .form .text {
+    font-size: 15px;
+  }
 }
