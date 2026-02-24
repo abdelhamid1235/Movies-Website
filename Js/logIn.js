@@ -29,6 +29,7 @@ signUp.addEventListener("click", (e) => {
   e.preventDefault();
   container.classList.add("active");
   document.querySelector(".login .message").innerText = "";
+  clear();
 });
 login.addEventListener("click", (e) => {
   e.preventDefault();
@@ -104,7 +105,7 @@ function showMessage(selector,text,color){
 }
 
 function clear(){
-  document.querySelectorAll(".signup input").forEach(input => {
+  document.querySelectorAll('input:not([type="submit"])').forEach(input => {
     input.value = "";
     input.classList.remove("is-valid","is-invalid");
   });
@@ -145,5 +146,6 @@ PasswordInput.addEventListener("blur",()=>
   validateInput(PasswordInput,/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,30}$/,"validationPass","Password must be at least 8 characters and include uppercase, lowercase, number and special character.")
 
 );
+
 
 
