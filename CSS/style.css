@@ -32,15 +32,14 @@ body.light-mode {
   z-index: 9999999;
   transition: all 1s;
 }
-.aside .aside-links .items a {
-  padding: 50px 0;
+nav a {
+  padding: 15px 0;
   font-size: 18px;
   transition: 1s;
   color:var(--white-color-dark);
-
 }
-.aside .aside-links .items a.active,
-.aside .aside-links .items a:hover {
+nav a.active,
+nav a:hover {
   color: var(--yellow-color) !important;
 }
 .aside .social i {
@@ -54,6 +53,7 @@ body.light-mode {
   width: 55px;
   z-index: 999999999;
   left: 0px;
+  top: 0px;
   transition: all 1s;
 }
 .second-aside .logo {
@@ -81,19 +81,28 @@ body.light-mode {
 .second-aside .social i:hover {
   color: var(--yellow-color);
 }
+@media(max-width:575px){
+  .aside{
+    display: none;
+  }
+}
 /* End Aside */
 
 /* Start Home */
 h1{
   color:var(--yellow-color) !important;
 }
+@media (max-width:405px){
+  h1{
+    font-size: 24px !important;
+  }
+}
 .login{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  margin: 20px 20px 0 20px;
+  position: relative;
 }
 .mode i {
   font-size: 20px;
@@ -101,10 +110,68 @@ h1{
   cursor: pointer;
   transition: all 0.5s;
 }
-
+.bars{
+  border:1px solid var(--white-color-dark);
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+.login .bars i{
+  color:var(--white-color-dark);
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-links {
+  position: absolute;
+  top: 100%;
+  right:-20px;
+  background:#333;
+  width:calc(100% + 40px);
+  padding: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+  display: none;
+  margin-top: 10px;
+  z-index: 1000;
+}
+.nav-links li {
+  list-style: none;
+  margin: 10px 0;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links.show {
+  max-height:500px;
+  display:none;
+}
+@media(max-width:575px){
+  .login .bars{
+    display: flex;
+  }
+  .nav-links.show {
+    display:block;
+  }
+}
+@media (max-width:500px){
+  .home .container{
+    padding: 12px !important;
+  }
+}
 .home .search input {
   width: 46%;
   color: var(--grey-light);
+}
+@media(max-width:490px){
+  .home .search{
+    flex-direction: column;
+  }
+  .home .search input{
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 ::placeholder {
   text-align: center;
@@ -170,6 +237,11 @@ h1{
 }
 .contact-us .contact-head h2{
   color: var(--yellow-color);
+}
+@media (max-width:575px) {
+  .contact-us .container{
+    width: 100% !important;
+  }
 }
 /* End Contact US */
 
