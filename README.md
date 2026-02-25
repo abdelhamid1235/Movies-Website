@@ -90,5 +90,7 @@ Through this project, I strengthened my understanding of:
 Front-End Developer
 
 ---
-🚀 Live Demo
+
+## 🚀 Live Demo
+
 🔗 <a href="https://abdelhamid1235.github.io/Movies-Website/" target="_blank">Live Demo </a>
